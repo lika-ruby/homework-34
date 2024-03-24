@@ -1,0 +1,48 @@
+.hero__padding {
+    padding: 40px 0;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/hero/hero-background.jpg);
+    padding: 200px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        @include flexbox();
+        flex-direction: column;
+    }
+
+    &__title {
+        color: $second-accent-color;
+        text-align: center;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+        max-width: 696px;
+        margin-bottom: 40px;
+        animation-name: title-move;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+
+
+    &__button {
+        @include button();
+        animation-name: btn-move;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+
+        &:hover,
+        &:focus {
+            background-color: $hover;
+        }
+    }
+
+}

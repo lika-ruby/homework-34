@@ -183,7 +183,7 @@ body {
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
@@ -328,6 +328,7 @@ body {
 }
 .header__menu {
   fill: #212121;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .header__menu {

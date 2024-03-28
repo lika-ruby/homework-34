@@ -17,7 +17,7 @@
 
 
     &__container {
-        @include flexbox($justify: space-between);
+        @include flexbox();
 
         @media screen and (min-width: 768px) {
             @include flexbox();
@@ -156,6 +156,7 @@
 
     &__menu {
         fill: $title-color;
+        margin-left: auto;
 
         @media screen and (min-width: 768px) {
             display: none;

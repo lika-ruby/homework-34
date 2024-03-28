@@ -7,7 +7,7 @@
     color: $logo-color;
 }
 
-@mixin button($align: center, $padding: 10px 32px) {
+@mixin button($align: center, $padding: 10px 24px) {
     color: $second-accent-color;
     text-align: $align;
     padding: $padding;

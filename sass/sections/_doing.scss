@@ -1,8 +1,17 @@
 .doing {
-    padding: 47px 0 94px;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        padding: 47px 0 94px;
+    }
 
     &__title {
         @extend %title;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+        }
     }
 
     &__list {

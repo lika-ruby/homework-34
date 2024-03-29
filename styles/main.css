@@ -110,7 +110,6 @@ body {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline: red dashed;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -128,11 +127,15 @@ body {
   }
 }
 
-.scroll__link {
+.scroll__container.container {
   position: fixed;
   bottom: 55px;
-  right: 2%;
+  transform: translateX(-50%);
+  left: 50%;
   height: 70px;
+}
+.scroll__link {
+  margin-left: auto;
   background-color: #2196f3;
   width: 55px;
   height: 55px;

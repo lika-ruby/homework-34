@@ -94,7 +94,6 @@ html {
 body {
   font-family: Roboto;
   position: relative;
-  overflow-x: hidden;
 }
 
 .container {
@@ -118,15 +117,10 @@ body {
   }
 }
 
-.scroll__container.container {
-  position: fixed;
-  bottom: 55px;
-  transform: translateX(-50%);
-  left: 50%;
-  height: 70px;
-}
 .scroll__link {
-  margin-left: auto;
+  position: fixed;
+  bottom: 35px;
+  right: 1%;
   background-color: #2196f3;
   width: 55px;
   height: 55px;
@@ -451,6 +445,7 @@ body {
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+  overflow: hidden;
 }
 .footer__container {
   display: flex;
@@ -462,6 +457,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer__container {
     gap: 60px 165px;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -509,6 +505,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__list {
     align-items: flex-start;
+    justify-content: flex-start;
     gap: 9px;
   }
 }
@@ -530,8 +527,15 @@ body {
   font-style: normal;
   text-align: center;
 }
-.footer__icon {
-  padding-top: 12px;
+@media screen and (min-width: 768px) {
+  .footer__icon {
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__icon {
+    padding-top: 12px;
+  }
 }
 .footer__title {
   color: #fff;
@@ -572,7 +576,6 @@ body {
   fill: #fff;
 }
 .footer__form {
-  padding-top: 12px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -583,6 +586,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__form {
     max-width: 570px;
+    padding-top: 12px;
   }
 }
 .footer__call {

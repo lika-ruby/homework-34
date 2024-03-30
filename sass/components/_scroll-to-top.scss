@@ -1,15 +1,9 @@
 .scroll {
 
-    &__container.container {
-        position: fixed;
-            bottom: 55px;
-            transform: translateX(-50%);
-            left: 50%;
-            height: 70px;
-    }
-
     &__link {
-        margin-left: auto;
+        position: fixed;
+            bottom: 35px;
+            right: 1%;
         background-color: $accent-color;
         width: 55px;
         height: 55px;

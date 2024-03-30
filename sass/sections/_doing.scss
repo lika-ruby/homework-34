@@ -1,5 +1,6 @@
 .doing {
     display: none;
+    overflow: hidden;
 
     @media screen and (min-width: 1200px) {
         display: block;

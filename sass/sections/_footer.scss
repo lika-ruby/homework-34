@@ -1,6 +1,7 @@
 .footer {
     background-color: $background-accent-color;
     padding: 60px 0;
+    overflow: hidden;
 
     &__container {
         @include flexbox();
@@ -8,6 +9,7 @@
 
         @media screen and (min-width: 768px) {
             gap: 60px 165px;
+            align-items: flex-start;
         }
 
         @media screen and (min-width: 1200px) {
@@ -40,6 +42,7 @@
 
         @media screen and (min-width: 1200px) {
             align-items: flex-start;
+            justify-content: flex-start;
             gap: 9px;
         }
     }
@@ -65,7 +68,14 @@
     }
 
     &__icon {
-        padding-top: 12px;
+
+        @media screen and (min-width: 768px) {
+                padding-top: 5px;
+            }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 12px;
+        }
     }
 
     &__title {
@@ -108,7 +118,6 @@
     }
 
     &__form {
-        padding-top: 12px;
         width: 100%;
 
         @media screen and (min-width: 768px) {
@@ -117,6 +126,7 @@
 
                         @media screen and (min-width: 1200px) {
                             max-width: 570px;
+                            padding-top: 12px;
                         }
     }
 
